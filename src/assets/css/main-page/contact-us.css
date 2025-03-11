@@ -1,0 +1,110 @@
+.contact-us {
+  width: 100rem;
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 8.125rem;
+  padding: 3.125rem;
+  background-image: url(../../images/contact-us.png);
+  background-size: cover;
+  border-radius: 5rem;
+}
+
+.contact-us__text-description {
+  margin-top: 1.875rem;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.contact-us__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  background-color: #303D4EB2;
+  padding: 1.875rem;
+  border-radius: 3.125rem;
+}
+
+.contact-us__form-row {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.contact-us__form-row__input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-us__form-row__input-label {
+  padding-left: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: var(--background-color);
+}
+
+.contact-us__form-row__input-input {
+  width: 30.25rem;
+  padding: 1.75rem 2rem;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  background-color: var(--color-base-background);
+  border: 1px solid var(--color-inactive);
+  border-radius: 2.5rem;
+}
+
+.contact-us__form-row__input-input::placeholder {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: var(--color-inactive);
+}
+
+
+.contact-us__form-row__input-checkbox {
+  display: block;
+  position: relative;
+  font-size: 1.25rem;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 0.75rem;
+}
+
+.contact-us__form-row__input-checkbox-text {
+  padding-left: 2.125rem;
+  font-size: 0.9375rem;
+  color: var(--background-color);
+}
+
+.contact-us__form-row__input-checkbox-default {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.contact-us__form-row__input-checkbox-checkmark {
+  position: absolute;
+  top: 0.25rem;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 0.09375rem solid var(--color-secondary);
+  border-radius: 0.25rem;
+  background-color: var(--color-base-background);
+}
+
+.contact-us__form-row__input-checkbox .contact-us__form-row__input-checkbox-default:checked ~ .contact-us__form-row__input-checkbox-checkmark {
+  background-image: url(../../svg/check.svg);
+  background-size: cover;
+}
+
+.contact-us__form-row__input-submit {
+  width: 30.25rem;
+  padding: 1.75rem 0;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-family: "Neutral Face", sans-serif;
+  color: var(--background-color);
+  background-color: var(--color-secondary) !important;
+  border-radius: 4.375rem;
+}

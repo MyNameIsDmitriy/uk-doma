@@ -1,0 +1,40 @@
+@import url(./reset.css);
+@import url(./fonts.css);
+@import url(./variables.css);
+
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./main-page/result.css);
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  background-color: var(--background-color);
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-primary);
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Neutral Face', sans-serif;
+}
+
+h2 {
+  font-size: 3.375rem;
+  line-height: 4.375rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}

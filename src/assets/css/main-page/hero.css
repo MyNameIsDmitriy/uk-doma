@@ -1,0 +1,36 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4.375rem;
+}
+
+.hero__head {
+  width: 100rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__head-title {
+  font-size: 4.25rem;
+  line-height: 5.5rem;
+}
+
+.hero__head-description {
+  margin-top: 3.625rem;
+  font-size: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.hero__main {
+  position: relative;
+}
+
+.hero__main-title {
+  position: absolute;
+  top: 0;
+  left: calc((100vw - 100rem) / 2);
+  font-size: 4.25rem;
+  line-height: 5.5rem;
+  color: var(--background-color);
+}

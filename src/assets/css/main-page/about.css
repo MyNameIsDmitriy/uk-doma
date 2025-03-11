@@ -1,0 +1,64 @@
+.about {
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.625rem;
+  margin-top: 8.125rem;
+}
+
+.about__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__base {
+  width: 37.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.215rem;
+}
+
+.about__text {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.about__links {
+  display: flex;
+  gap: 2rem;
+}
+
+.about__links-details {
+  padding: 1.75rem 2.1875rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: var(--background-color) !important;
+  text-transform: uppercase;
+  background-color: var(--color-secondary);
+  border-radius: 4.375rem;
+}
+
+.about__links-management {
+  padding: 1.75rem 2.1875rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: var(--color-secondary) !important;
+  background-color: var(--color-base-background);
+  border: 1px solid var(--color-secondary);
+  border-radius: 4.375rem;
+  text-transform: uppercase;
+}
+
+.about__statistics {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 2.5rem;
+}
+
+.about__statistics-item-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: var(--color-inactive);
+}
+
+ 

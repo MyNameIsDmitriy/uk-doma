@@ -1,0 +1,121 @@
+.services {
+  margin-top: 8.125rem;
+  overflow-x: hidden;
+}
+
+.services__head {
+  width: 100rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__swiper {
+  position: absolute;
+  left: calc((100vw - 100rem) / 2);
+  width: calc(100vw - (100vw - 100rem) / 2);
+  margin-top: 3.375rem;
+}
+
+.services__swiper-slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.75rem;
+  width: 32.0625rem;
+  height: 32.0625rem;
+  border-radius: 3.75rem;
+  background-size: cover;
+}
+
+.services__swiper-slide:nth-child(4n - 3) {
+  background-image: 
+  linear-gradient(#474B48, #323B327F, #A8A8A800),
+  url(../../images/plumbing.png);
+}
+
+.services__swiper-slide:nth-child(4n - 2) {
+  background-image: 
+  linear-gradient(#474B48, #323B327F, #A8A8A800),
+  url(../../images/connect.png);
+}
+
+.services__swiper-slide:nth-child(4n - 1) {
+  background-image: 
+  linear-gradient(#474B48, #323B327F, #A8A8A800),
+  url(../../images/electrics.png);
+}
+
+.services__swiper-slide:nth-child(4n) {
+  background-image: 
+  linear-gradient(#474B48, #323B327F, #A8A8A800),
+  url(../../images/intercom-services.png);
+}
+
+.services__swiper-slide__title {
+  color: var(--background-color);
+}
+
+.services__swiper-slide__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.services__swiper-slide__link {
+  display: flex;
+  align-self: flex-start;
+  background-color: var(--background-color);
+  padding: 2.625rem 2.25rem;
+  border-radius: 50%;
+}
+
+.services__head-link {
+  padding: 1.75rem 2.1875rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: var(--color-secondary) !important;
+  background-color: var(--color-base-background);
+  border: 1px solid var(--color-secondary);
+  border-radius: 4.375rem;
+  text-transform: uppercase;
+}
+
+.services__report {
+  width: 100rem;
+  display: flex;
+  margin-top: calc(3.125rem + 32.0625rem + 8.125rem);
+}
+
+.services__report-left {
+  padding: 5.3125rem 5rem;
+  color: var(--background-color);
+  background-image: linear-gradient(#45684D, #467F53, #659B70);
+  border-radius: 1.875rem 0 0 1.875rem;
+}
+
+.services__report-left-subtitle {
+  margin-top: 1.875rem;
+  margin-bottom: 3.125rem;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.services__report-left-contact-us {
+  display:inline-block;
+  padding: 1.75rem 2.1875rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: var(--color-secondary) !important;
+  background-color: var(--color-base-background);
+  border: 1px solid var(--color-secondary);
+  border-radius: 4.375rem;
+  text-transform: uppercase;
+}
+
+.services__report-right-img {
+  height: 100%;
+  border-radius: 0 1.875rem 1.875rem 0;
+}
