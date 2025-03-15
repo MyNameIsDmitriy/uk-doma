@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,21 +46,25 @@
       </a>
     </div>
     <div class="header__burger">
-      <button class="header__burger-button">
-        <img class="header__burger-button-icon" src="./assets/svg/burger.svg" alt="">
+      <button class="header__burger-button" aria-label="Open menu">
+        <span class="header__burger-button-line"></span>
+        <span class="header__burger-button-line"></span>
+        <span class="header__burger-button-line"></span>
       </button>
-
       <nav class="header__burger-menu">
-        <a class="header__burger-menu-link" href="">Главная</a>
-        <a class="header__burger-menu-link" href="">О нас</a>
-        <a class="header__burger-menu-link" href="">Услуги</a>
-        <a class="header__burger-menu-link" href="">Дома в управлении</a>
-        <a class="header__burger-menu-link" href="">Раскрытие информации</a>
-        <a class="header__burger-menu-link" href="">Новости</a>
-        <a class="header__burger-menu-link" href="">Контакты</a>
+        <div class="header__burger-menu-links">
+          <a class="header__burger-menu-link" href="">Главная</a>
+          <a class="header__burger-menu-link" href="">О нас</a>
+          <a class="header__burger-menu-link" href="">Услуги</a>
+          <a class="header__burger-menu-link" href="">Дома в управлении</a>
+          <a class="header__burger-menu-link" href="">Раскрытие информации</a>
+          <a class="header__burger-menu-link" href="">Новости</a>
+          <a class="header__burger-menu-link" href="">Контакты</a>
+        </div>
+        <button class="header__burger-menu-contact-us">связаться</button>
       </nav>
     </div>
-  </header>
+  </header>  
 
   <main class="main">
     <section class="hero">
@@ -291,7 +295,5 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./scripts/main.js"></script>
-
 </body>
-
 </html>
