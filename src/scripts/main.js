@@ -7,8 +7,19 @@ burgerButton.addEventListener('click', () => {
 });
 
 new Swiper('.services__swiper', {
-  slidesPerView: 3.5,
+  slidesPerView: 2.2,
   spaceBetween: 20,
-  loop: true,
+  loop: false,
   grabCursor: true,
+  breakpoints: {
+    1600: {
+      slidesPerView: 3.5,
+    },
+    992: {
+      slidesPerView: 3.1,
+    },
+    576: {
+      slidesPerView: 1.8,
+    },
+  },
 });
