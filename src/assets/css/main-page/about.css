@@ -2,51 +2,23 @@
   width: 100rem;
   display: flex;
   flex-direction: column;
-  gap: 2.625rem;
   margin-top: 8.125rem;
 }
 
 .about__body {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.625rem;
 }
 
 .about__base {
   width: 37.125rem;
   display: flex;
   flex-direction: column;
-  gap: 3.215rem;
-}
-
-.about__text {
+  gap: 3.125rem;
   font-size: 1.25rem;
-  line-height: 1.875rem;
-}
-
-.about__links {
-  display: flex;
-  gap: 2rem;
-}
-
-.about__links-details {
-  padding: 1.75rem 2.1875rem;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  color: var(--background-color) !important;
-  text-transform: uppercase;
-  background-color: var(--color-secondary);
-  border-radius: 4.375rem;
-}
-
-.about__links-management {
-  padding: 1.75rem 2.1875rem;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  color: var(--color-secondary) !important;
-  background-color: var(--color-base-background);
-  border: 1px solid var(--color-secondary);
-  border-radius: 4.375rem;
-  text-transform: uppercase;
+  line-height: 150%;
 }
 
 .about__statistics {
@@ -61,4 +33,203 @@
   color: var(--color-inactive);
 }
 
- 
+.about__links {
+  display: flex;
+  gap: 2rem;
+}
+
+.about__links-details {
+  padding: 1.75rem 2.1875rem;
+  font-size: 1.125rem;
+  line-height: 130%;
+  color: var(--background-color) !important;
+  text-transform: uppercase;
+  background-color: var(--color-secondary);
+  border-radius: 4.375rem;
+}
+
+.about__links-management {
+  padding: 1.75rem 2.1875rem;
+  font-size: 1.125rem;
+  line-height: 130%;
+  color: var(--color-secondary) !important;
+  background-color: var(--color-base-background);
+  border: 1px solid var(--color-secondary);
+  border-radius: 4.375rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 100rem) {
+  .about {
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+
+  .about__title {
+    font-size: 3rem;
+  }
+
+  .about__base {
+    width: 31.25rem;
+    font-size: 1.125rem;
+  }
+
+  .about__statistics-item-title {
+    font-size: 2rem;
+  }
+
+  .about__statistics-item-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .about__links-details, .about__links-management {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 80rem) {
+  .about__title {
+    font-size: 2.5rem;
+  }
+
+  .about__base {
+    width: 28.125rem;
+    font-size: 1rem;
+  }
+
+  .about__statistics {
+    gap: 1.25rem;
+  }
+
+  .about__statistics-item-title {
+    font-size: 1.75rem;
+  }
+
+  .about__statistics-item-subtitle {
+    font-size: 1rem;
+  }
+
+  .about__links {
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  .about__links-details, .about__links-management {
+    padding: 1.5rem 1.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 62rem) {
+  .about {
+    margin-top: 4.375rem;
+  }
+
+  .about__title {
+    display: flex;
+    align-self: center;
+    width: 80%;
+  }
+
+  .about__body {
+    flex-direction: column;
+    gap: 1.875rem;
+    align-items: center;
+  }
+
+  .about__base {
+    width: 80%;
+    gap: 2.25rem;
+    font-size: 1.125rem;
+  }
+
+  .about__statistics {
+    gap: 2.5rem;
+  }
+
+  .about__statistics-item-title {
+    font-size: 2rem;
+  }
+
+  .about__statistics-item-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .about__links {
+    justify-content: space-evenly;
+  }
+
+  .about__links-details, .about__links-management {
+    padding: 1.75rem 2.1875rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .about__title {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  .about__base {
+    width: 100%;
+  }
+
+  .about__statistics {
+    gap: 1rem;
+  }
+
+  .about__statistics-item-title {
+    font-size: 1.75rem;
+  }
+
+  .about__statistics-item-subtitle {
+    font-size: 1rem;
+  }
+
+  .about__links {
+    margin-top: 1.875rem;
+  }
+}
+
+@media (max-width: 36rem) {
+  .about__title {
+    font-size: 1.5rem;
+  }
+
+  .about__body {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1.25rem;
+  }
+
+  .about__base {
+    font-size: 1rem;
+  }
+
+  .about__statistics {
+    grid-template-columns: repeat(1, max-content);
+    gap: 1.25rem;
+  }
+
+  .about__statistics-item-title {
+    font-size: 1.375rem;
+  }
+
+  .about__statistics-item-subtitle {
+    font-size: 1rem;
+  }
+
+  .about__links {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .about__links-details, .about__links-management {
+    padding: 1.25rem 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
