@@ -1,9 +1,16 @@
 const burgerButton = document.querySelector('.header__burger-button');
 const burgerMenu = document.querySelector('.header__burger-menu');
+const body = document.body;
 
 burgerButton.addEventListener('click', () => {
   burgerMenu.classList.toggle('open');
   burgerButton.classList.toggle('open');
+
+  if (burgerMenu.classList.contains('open')) {
+    body.style.overflow = 'hidden';
+  } else {
+    body.style.overflow = '';
+  }
 });
 
 new Swiper('.services__swiper', {

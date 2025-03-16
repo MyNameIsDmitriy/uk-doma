@@ -164,17 +164,19 @@
   }
 
   .header__menu-list {
-    gap: 1.875rem;
+    gap: 1rem;
   } 
+}
 
+@media (max-width: 80rem) {
   .header__contact-us-link {
     display: none;
   }
 }
 
-@media (max-width: 70rem) {
+@media (max-width: 62rem) {
   .header {
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1rem;
     background-color: var(--color-base-background);
     border-radius: 3.125rem;
@@ -195,8 +197,9 @@
   }
 }
 
-@media (max-width: 49rem) {
+@media (max-width: 48rem) {
   .header {
+    justify-content: space-between;
     padding: 0.6875rem 1.25rem;
   }
 
