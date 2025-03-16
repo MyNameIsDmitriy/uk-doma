@@ -121,6 +121,7 @@
   .footer {
     gap: 1.875rem;
     margin-top: 4.375rem;
+    border-radius: 3.125rem 3.125rem 0 0;
   }
 
   .footer__menu-list {
