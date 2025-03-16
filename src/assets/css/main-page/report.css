@@ -1,0 +1,135 @@
+.report {
+  width: 100rem;
+  display: flex;
+  margin-top: calc(3.125rem + 32.0625rem + 8.125rem);
+}
+
+.report-info {
+  padding: 5.3125rem 5rem;
+  color: var(--background-color);
+  background-image: linear-gradient(#45684D, #467F53, #659B70);
+  border-radius: 1.875rem 0 0 1.875rem;
+}
+
+.report-info-subtitle {
+  margin-top: 1.875rem;
+  margin-bottom: 3.125rem;
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+
+.report-info-contact-us {
+  display: inline-block;
+  padding: 1.75rem 2.1875rem;
+  font-size: 1.125rem;
+  line-height: 130%;
+  color: var(--color-secondary) !important;
+  background-color: var(--color-base-background);
+  border: 1px solid var(--color-secondary);
+  border-radius: 4.375rem;
+  text-transform: uppercase;
+}
+
+.report-background-img {
+  height: 100%;
+  border-radius: 0 1.875rem 1.875rem 0;
+}
+
+@media (max-width: 100rem) {
+  .report {
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+
+  .report-info-title {
+    font-size: 2.25rem;
+  }
+
+  .report-info-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .report-info-contact-us {
+    padding: 1.5rem 1.875rem; 
+  }
+
+  .report-background-img {
+    object-fit: cover;
+    object-position: left top;
+  }
+}
+
+@media (max-width: 80rem) {
+  .report-info {
+    padding: 4rem 3.75rem;
+  }
+  
+  .report-info-title {
+    font-size: 2rem;
+  }
+
+  .report-info-subtitle {
+    margin-top: 1.25rem;
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media (max-width: 62rem) {
+  .report-info {
+    padding: 2.75rem 2.5rem;
+  }
+
+  .report-info-title {
+    font-size: 1.75rem;
+  }
+
+  .report-info-subtitle {
+    font-size: 1rem;
+  }
+
+  .report-info-contact-us {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .report {
+    flex-direction: column-reverse;
+    margin-top: calc(3.125rem + 32.0625rem + 4.375rem);
+  }
+
+  .report-info {
+    border-radius: 0 0 1.875rem 1.875rem;
+  }
+
+  .report-background-img {
+    height: 23rem;
+    width: 100%;
+    border-radius: 1.875rem 1.875rem 0 0;
+  }
+}
+
+@media (max-width: 36rem) {
+  .report-info {
+    padding: 1.25rem;
+  }
+
+  .report-info-title {
+    font-size: 1.375rem;
+  }
+
+  .report-info-title-br {
+    display: none;
+  }
+
+  .report-background-img {
+    height: 18rem;
+  }
+
+  .report-info-contact-us {
+    width: 100%;
+    padding: 1.25rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
